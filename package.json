@@ -1,0 +1,21 @@
+{
+  "name": "twitter-app",
+  "version": "1.0.0",
+  "description": "Simple twitter application",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Tanjil",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-status-codes": "^2.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "zod": "^3.24.2"
+  }
+}
