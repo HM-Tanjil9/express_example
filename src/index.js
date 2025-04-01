@@ -1,6 +1,7 @@
 import express from 'express';
 import { StatusCodes } from 'http-status-codes';
 import morgan from 'morgan';
+import connectDB from './config/dbConfig.js';
 import { PORT } from './config/serverConfig.js';
 import apiRouter from './routes/index.js';
 
@@ -29,4 +30,5 @@ app.all('*', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Successfully started the server on ${PORT}`);
+    connectDB();
 })
