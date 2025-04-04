@@ -19,7 +19,7 @@ app.get('/ping', (req, res) => {
     });
 });
 
-app.use('/api', apiRouter)
+app.use('/api', apiRouter) // For /api address
 
 // For not found
 app.all('*', (req, res) => {
